@@ -1,0 +1,6 @@
+01-08
+Seems like multithreading is working, although print(IP); call seems to be working in one thread while everything else works in two! Files seem to be saved out with fidelity though.
+
+31-07
+PacServer with supposed multi-threading - seems like client sockets are clashing, certainly observed behaviour from one connection sessions isn't replicated with two clients.
+Possible cause - OO socket code: WComm class.

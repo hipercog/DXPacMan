@@ -1,0 +1,67 @@
+12-03
+Not sure if any changes made - last date on most current version of files.
+
+08-03
+Fiddling with various bits to set test conditions: input and output file names, algorithm settings, etc.
+
+17-02
+Re-ordered first-past-the-posts to match ranking.
+Inverted the value of rules in the Averaged weighted-voting rule set.
+Put back the single-level rules with some averages.
+Set windowing to 4 levels.
+Altered output file name.
+
+16-02
+Completed reconfiguration mentioned in 15-02.
+Inverted the order of the first-past-the-post rule sets in the 1RuleCsfy functions.
+Fixed several nasty bugs which invalidated all previous averaged results.
+
+15-02
+Reconfigured naive rules to the old format where every one is naive (they had been averaged for some key features that didn't work on single levels of data). The version which gave the most recent results is in 03-02.
+
+06-02
+Added safety catch to utility() and valuateState() functions, in case they get passed a look-ahead deque of 0 length.
+
+03-02
+Altered the old Classify() to call the new Classify functions with first-past-the-post resolution, and output all data to a single Classify.csv file.
+
+01-02
+Included the old Classify function in the postDTPM function.
+
+31-01
+Added new Classify functions to Classify.cpp - allow rule resolution by 'first-to-fire'.
+
+17-01
+Added manual entry of bt Lag and learning rate (alpha) to allow tailored testing.
+
+15-01
+Rearranged the postDTPM() code a little to make switching between evolved and unit weights easier.
+
+14-01
+Added three new features, A1_AtkGstHse(); C5_MovesWithoutGain(); and P4_SpeedOfHunt();
+Adding them all to the test on myFullGame drops accuracy by almost 3%. Obviously weights or entire features are wrong wrong.
+
+12-01
+Fixed the evolving two weights system. Doesn't really improve accuracy. Proper evolution would require a large population with a real recombination mechanism.
+
+11-01
+More messing around, changed dist feature under PacAtk from centroid to nearest.
+
+08-01
+Messed around with weights...tested effects of adding & removing features.
+
+06-01
+Adjusted some variables - set the scoring of utility functions back to what it was in version 04-01, but kept the non-scoring related changes.
+Tested using at least 3 or more moves - raised accuracy to 70% on depth 4!
+
+Also added better functionality to include 3 way and 4 way junctions in the 'no-backtracking' code. Had no effect at all - accuracy exactly the same as for only including 2 way
+
+05-01
+Implemented functionality that forces the prediction to follow the direction Pacman has been travelling if he has been in a corridor (i.e. can only go 2 ways) for at least 2 moves.
+That raised accuracy to 64%. 
+Using at least 1 move lowers accuracy to ~20%.
+Haven't tested using at least 3 or more moves.
+Also altered scoring of utility functions, adding more weight to most features. Removed Std Dev of Lives from called features, it is not necessarily positive or negative.
+
+04-01
+Added calculation of the best route for Points, to the utility calculation. 

@@ -1,0 +1,86 @@
+Press ESCAPE to terminate PacServer
+193.61.166.13 : Client Connected!
+C:/PacPlayd/193_61_166_13
+
+193_61_166_13 sent instruction: DirSend
+C:/PacPlayd/193_61_166_13/07-213-19-21-19
+
+Directory Received!
+
+193.61.166.20 : Client Connected!
+C:/PacPlayd/193_61_166_20
+
+193_61_166_20 sent instruction: DirSend
+C:/PacPlayd/193_61_166_20/07-213-19-11-47
+
+Directory Received!
+
+193_61_166_20 sent instruction: FileSend
+C:/PacPlayd/193_61_166_20/07-213-19-11-47/Level-1.csv
+
+Filename Received!
+
+193_61_166_20 sent instruction: DataSend
+Data Received!
+
+193_61_166_20 sent instruction: FileSend
+C:/PacPlayd/193_61_166_13/07-213-19-21-19/Level-1.csv
+
+Filename Received!
+
+193_61_166_20 sent instruction: DataSend
+Data Received!
+
+193_61_166_20 sent instruction: FileSend
+C:/PacPlayd/193_61_166_20/07-213-19-11-47/Level-2.csv
+
+Filename Received!
+
+193_61_166_20 sent instruction: DataSend
+Data Received!
+
+193_61_166_20 sent instruction: FileSend
+C:/PacPlayd/193_61_166_13/07-213-19-21-19/Level-2.csv
+
+Filename Received!
+
+193_61_166_20 sent instruction: DataSend
+Data Received!
+
+193_61_166_20 sent instruction: FileSend
+C:/PacPlayd/193_61_166_13/07-213-19-21-19/Level-3.csv
+
+Filename Received!
+
+193_61_166_20 sent instruction: DataSend
+Data Received!
+
+193_61_166_20 sent instruction: EndConnection
+Connection Ended......
+
+193_61_166_20 sent instruction: FileSend
+C:/PacPlayd/193_61_166_20/07-213-19-11-47/Level-3.csv
+
+Filename Received!
+
+193_61_166_20 sent instruction: DataSend
+Data Received!
+
+193_61_166_20 sent instruction: FileSend
+C:/PacPlayd/193_61_166_20/07-213-19-11-47/Level-4.csv
+
+Filename Received!
+
+193_61_166_20 sent instruction: DataSend
+Data Received!
+
+193_61_166_20 sent instruction: FileSend
+C:/PacPlayd/193_61_166_20/07-213-19-11-47/Level-5.csv
+
+Filename Received!
+
+193_61_166_20 sent instruction: DataSend
+Data Received!
+
+Connection Ended......
+

@@ -1,0 +1,66 @@
+if( S1c_AvgCycles > 5500 )then NotCq
+
+if( C5_MvsWoutGain > 150 )then NotCq
+
+if( C5_MvsWoutGain > 106  and  P4b_HuntGst2_AvgSpd <= 1164  and  P7_PutOffGstHse == 0 )then NotCq
+
+if( S2a_LivesGained == 1  and  S1c_AvgCycles <= 5650  and  Lives_SDev <= 1.654 )then Conqr
+
+if( S2a_LivesGained == 1  and  C4_CaughtAfterHunt <= 2  and  S1c_AvgCycles <= 6530 )then Conqr
+
+if( ChryBool_Sum > 23  and  S2a_LivesGained == 1  and  Lives_SDev <= 1.54 )then Conqr
+
+if( Points_Max > 1950  and  P3_CntDtsB4Pll1 > 19  and  P4a_HuntGst1_AvgSpd <= 230 )then NotCq
+
+if( A4_HuntAfterPill > 1  and  S5_GhostHunts > 3.75  and  CycleCountPerState_SDev > 13 )then NotCq
+
+if( C5_MvsWoutGain > 106  and  P7_PutOffGstHse == 0  and  C1b_ThreatPerception_NumKilled <= 2  and  A4_HuntAfterPill <= 2 )then NotCq
+
+if( C5_MvsWoutGain > 79  and  ChryBool_Sum > 23  and  R1_AvgTimeToEatChrry > 36  and  A4_HuntAfterPill <= 2 )then NotCq
+
+if( R2_AvgChrryPerLvl == 1  and  P7_PutOffGstHse == 0  and  C1b_ThreatPerception_NumKilled <= 1  and  S2b_LivesLost <= 14 )then NotCq
+
+if( A4_HuntAfterPill > 0  and  A1_AtkGstHse <= 0  and  A6_Chase¬Dots <= 5  and  P1c_GstsEtnOnPll > 0 )then Conqr
+
+if( A4_HuntAfterPill <= 2  and  S2a_LivesGained == 1  and  Lives_SDev <= 1.55  and  P1_LureToPill > 0 )then Conqr
+
+if( A4_HuntAfterPill <= 2  and  S2a_LivesGained == 1  and  D1_CyclesPerMove <= 15.45  and  Lives_SDev <= 1.4 )then Conqr
+
+
+-0.482137,Score,Usage
+Conqueror,,6
+Not_Conqueror,,8
+
+A1_AtkGstHse,0.000000,1
+A3_GhostKills,4.000000,0
+A4_HuntAfterPill,2.000000,6
+A6_Chase¬Dots,2.000000,1
+C1b_ThreatPerception_NumKilled,0.000000,2
+C2.b_AvgDstPacAtkCntrd,6.982301,0
+C3_CloseCalls,16.000000,0
+C4_CaughtAfterHunt,0.000000,1
+C5_MvsWoutGain,219.000000,4
+C6_PntsOvrLives,24700.000000,0
+C7_KilledAtHouse,0.000000,0
+ChryBool_Sum,63.000000,2
+CycleCountPerState_SDev,30.775478,1
+D1_CyclesPerMove,12.000000,1
+D2_Osclltng,101.000000,0
+Lives_SDev,0.362595,4
+P1_LureToPill,2.000000,1
+P1b_2GstsLrd2Pll,0.000000,0
+P1c_GstsEtnOnPll,4.000000,1
+P1d_PacEtnB4GetPll,0.000000,0
+P3_CntDtsB4Pll1,50.000000,1
+P4a_HuntGst1_AvgSpd,118.750000,1
+P4b_HuntGst2_AvgSpd,0.000000,1
+P7_PutOffGstHse,0.000000,3
+Points_Max,2350.000000,1
+R1_AvgTimeToEatChrry,63.000000,1
+R2_AvgChrryPerLvl,1.000000,1
+S1b_AvgStates,469.000000,0
+S1c_AvgCycles,5638.000000,3
+S2a_LivesGained,1.000000,5
+S2b_LivesLost,0.000000,1
+S4_TeleportUse,1.000000,0
+S5_GhostHunts,4.000000,1

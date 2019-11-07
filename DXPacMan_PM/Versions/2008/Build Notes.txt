@@ -1,0 +1,164 @@
+31-12
+Added P1_LureToPill().
+Altered utility() function to use deques - discovered the results aren't affected by the utility function. 70% is not bad with a random choice!
+
+29-12
+Added A6_Chase¬Dots(); C4_CaughtAfterHUnt(); and C1_ThreatPrcptn().
+Improved the updateState() function - deals with Pacman dying and estimates the number of states left in the GhostFleeTimer when PacAttack.
+Tested all new utility funcs on a long game, with 66% accuracy.
+
+27-12
+Added versions of: S2_LivesChanged(); Agg2_ChryBoolSum; and C3_CloseCalls.
+They don't raise accuracy above the first two - still around 70%.
+Fixed some bugs and tidied up output code.
+
+25-12
+Added version of Agg1_LivesSDev(), which didn't crash on one test.
+Added functionality to take utility calculation function results to make a prediction, and compare that prediction with actual MovedDir, and print result.
+
+23-12
+Added a global deque of PacStates to save the states read from a file in analyse mode. Thus the past can be accessed by utility calculation functions.
+Tried an implementation of A4_HuntAfterPill(), seems to read something.
+
+30-11
+Completed spawnStates using only Pacman permutations. Added a GhostMoves struct to PacState to achieve this - one GhostMoves is built for each PacState in tree, and stored with it. 
+Altered WinMain so that games are only played in Release mode, and log analysis happens in Debug.
+
+29-11
+Brought new spawnStates function to usability - only branches on Pacman's potential moves. Very fast. 
+Trying to Use twin tree for GhostMoves alongside PacStates tree looks awkward - see
+ notes.
+
+26-11
+Re-thought and fixed the valuateStateDQ function. Now seems to work properly, and not too slowly. Altered printout format. Next need to implement new idea for growing tree - see notebook.
+
+25-11
+Altered printout format.
+
+24-11
+Bug fixes, improved 'virtual' PacState updating. Seems to create an unprocessable amount of new states at depth 3. Need to think about culling as depth 3 really isn't enough!
+
+23-11
+Completed a 'first draft' of PacState tree building and branch extraction-for-utility calculation. Strange indexing results need to be investigated. 
+
+22-11
+Refactored quite a lot of dtpm.cpp, added NextMoves struct for one actor, nearly finished completely new tree building code for states.
+Added get and set functions to PacState struct, to store a probability of occurence.
+
+20-11
+Begun to work on Next iteration of Decision Theory Pacman. Will need to overhaul dtpm.cpp to calculate utility based not on cumulative values for single states, but on a single value over several states - the branches of a tree of possible future states.
+
+11-11
+Fixed bug in Record_Averages function.
+
+09-11
+Began to look at how utility for dtpm.cpp can be calculated...started by moving utility functions to new files utility.cpp plus utility.h
+Fixed some minor bugs in Classify functionality - seems to work properly.
+
+03-11
+Inserted extra Classify function for windowed averaged features - i.e. feature values are taken from a window of previous levels, not all previous levels, to be given to the rule ensemble. 
+Altered output format for Classify#.csv files. Now each ensemble type outputs its own rules fired;
+then: final score, Conq and Not Conq number of rules, in a row;
+then a 5x33 table with:
+Feature names, feature values, Usage of features in Windowed, Averaged, Naive.
+
+19-10
+Fixed some bugs like bad averaging of features, and Points_Max deque being referenced in the wrong place in some rules.
+
+16-10
+Begin integration of naive rules with averaged rules by importing old classifier function alongside new and renaming both with suffix: Naive and Averages, respectively.
+
+10-10_4 Ghost
+Tested a switch to four ghosts. Classifier stil works, but the data will not relate to the rules, since data mining happened on 2-ghost-game logs.
+
+10-10
+Implemented scheme 1 of HuntAfterPill averaging, multiply all condition values by (1.5X3.65) = 5.475
+This has resulted in values that seem quite reasonable! Test for accuracy...
+
+09-10
+Set values for all features except A4 (since it's implementation was needlessly complex, need to decide how to map it back from normalised); plus S5 (since it only fires on last level); and Points_Max (since its average is not calculated).
+This is so that they reflect the averages before normalisation. This should make them more true to life. They are still quite naive, since now they compare with averages even in early levels when the average value is still quite crude.
+
+30-09
+(Hopefully) Fixed deque index out of range bug in A6 feature deriver function.
+
+29-09_3pm
+Set aggragate to hold averages. 
+Refactored rule implementation so that features that happen maximum once per level, are compared using average-over-levels, to the original value from the rule (which are normals, so may not be appropriate?). That is:
+* R2_AvgChrryPerLvl
+* S2a_LivesGained
+* S2b_LivesLost
+* P7_PutOffGstHse
+
+28-09
+Implemented an extra element at the start of all feature deques (except Points_Max) in Classifier.cpp, to hold an ongoing aggregate (average or sum) of the feature over all levels.
+Made first use of this in two 3-condition annotated rules.
+
+23-08
+This version tightened up security of code so that less bugs should be possible, by scrutinising all functions and playing safe with all variables, parameters and data structures. 
+Some bugs are still there, but unless I can find them first-hand, they will remain!
+Also, this version of the deployed rules has done very well at correctly classifying 
+Chris 	(1 game 	6 lvls), 
+James 	(2 games	18 & 12 lvls), 
+Leo 	(2 games	11 & 8 lvls) and
+Therese	(1 game		4 lvls).
+
+Thus it is to be saved as a watershed version.
+
+09-08
+Refactored all feature result variables to deques, so that the history of features across levels is available. Next need to identify which features should be measured across more than one level, for more accurate rules.
+
+07-08
+Altered difficulty slightly - changed amount by which Ghosts slow and sped up again every time a Pill is eaten. Also edited SetuPacman project so that it installs to C:\PacPlayd and creates Log folder under that.
+
+03-08
+FInished proper mapping, for one level. Some features, if measured over multiple levels, could be mapped to a more realistic floating point - i.e. retain their 'averaged' format.
+Final upgrade to logging output format for rules.
+
+02-08
+Started proper mapping for rules - see .xlsx doc mentioned in code comment. 
+Upgraded logging to give all rules that fired, plus number of which were Conq and ibid NotConq.
+Created function InitStrings to be called once from Win_Main and fill deques with the names of features and the rules, to be used when logging. 
+
+28-07
+Added counter to record usage of features and rules for Conq/Not. Reworked format of output of log data. Did simple mapping for 1 condition rules. 
+
+27-07
+Tested recently implemented deriver functions. 
+
+26-07
+Refactored all deriver functions so that they work for one level. Have not tested.
+Implemented 50 rule ensemble - basic copy only. Have not mapped averaged normalised values to values that would be sensible for one level.
+
+25-07
+Completed refactoring Classifier.cpp so that each deriver function output is stored in a float named for the feature it represents, and implementing all features from final 50 rules. Have not refactored the last deriver functions for use on 1 level - only copied.
+
+24-07
+Restarted coding so backed up entire source file group. Have not implemented anything major - examining features.
+Refactored Classifier.cpp so that each deriver function output is stored in a float named for the feature it represents. This will allow building of rules that read much the same as those from the decision trees. Also implemented all features from final 50 rules, not already there.
+
+16-06
+Implemented select rules from C&R 61:39 ConqNot. Some included as they were already coded, the rest needed to have a ranking score over 2 and a confidence of at least 0.6.
+Added several new feature derivation functions, the efficiency and possible redundancy of these should be examined as they may cause too long a pause between levels.
+
+12-06
+Implemented four trees from C&R 61:39 ConqNot...each rule in a tree is disjoint!
+Altered length of time ghosts are vulnerable (GhostChaseTimer) in main.cpp, so that after level 12 it starts to increase again.
+Consider altering other difficulty settings, like gakProb and pacProb, perhaps to rise and fall per level. As each ghost is eaten in a level, it gets more angry and comes after Pacman more aggressively?
+
+05-06
+Tested most feature derivation functions, added P1_LureToPill. All SEEM to be working well.
+Began implementing classification rules from C&R ConqNot. Interpretation of values is a big problem.
+
+04-06
+Added top ten features from C&R ConqNot to Classify function, began testing.
+
+01-06
+Added Classifier and Deriver .cpp & .h
+Set local out path to C://PacPlayd/Logs/ as C://PacPlayd/ is full of data mining files.
+Set program to run a simple classify function at the ChangeLevel function in main.cpp, which outputs a choice between Conqueror or Not based on number of HuntAfterPill behaviours observed.
+Refactored A* function into universals.cpp, also added GetClosestPill function here.
+In Deriver, added top ten feature derivation functions. New code for aggregate functions (which only existed in Clem before).
+
+_Origin_
+Began work on code again, so saved all files found in build folder. 

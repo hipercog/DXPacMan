@@ -1,0 +1,54 @@
+if( A4_HuntAfterPill <= 1 )then NotCq
+
+if( ChryBool_Sum <= 24 )then NotCq
+
+if( C5_MvsWoutGain <= 106  and  S2a_LivesGained == 1 )then Conqr
+
+if( D2_Osclltng <= 123  and  R1_AvgTimeToEatChrry <= 21 )then NotCq
+
+if( S2a_LivesGained == 1  and  S1c_AvgCycles <= 5650  and  Lives_SDev <= 1.654 )then Conqr
+
+if( S2a_LivesGained == 1  and  C4_CaughtAfterHunt <= 2  and  S1c_AvgCycles <= 6530 )then Conqr
+
+if( R2_AvgChrryPerLvl == 1  and  P7_PutOffGstHse == 0  and  C1b_ThreatPerception_NumKilled <= 1  and  S2b_LivesLost <= 14 )then NotCq
+
+if( A4_HuntAfterPill <= 2  and  S2a_LivesGained == 1  and  D1_CyclesPerMove <= 15.45  and  Lives_SDev <= 1.4 )then Conqr
+
+
+0.327222,Score,Usage
+Conqueror,,4
+Not_Conqueror,,4
+
+A1_AtkGstHse,4.000000,0
+A3_GhostKills,5.000000,0
+A4_HuntAfterPill,1.000000,2
+A6_Chase¬Dots,2.000000,0
+C1b_ThreatPerception_NumKilled,0.000000,1
+C2.b_AvgDstPacAtkCntrd,9.143750,0
+C3_CloseCalls,17.000000,0
+C4_CaughtAfterHunt,0.000000,1
+C5_MvsWoutGain,70.000000,1
+C6_PntsOvrLives,2550.000000,0
+C7_KilledAtHouse,0.000000,0
+ChryBool_Sum,14.000000,1
+CycleCountPerState_SDev,6.898911,0
+D1_CyclesPerMove,10.000000,1
+D2_Osclltng,106.000000,1
+Lives_SDev,0.499669,2
+P1_LureToPill,0.000000,0
+P1b_2GstsLrd2Pll,0.000000,0
+P1c_GstsEtnOnPll,3.000000,0
+P1d_PacEtnB4GetPll,0.000000,0
+P3_CntDtsB4Pll1,48.000000,0
+P4a_HuntGst1_AvgSpd,266.250000,0
+P4b_HuntGst2_AvgSpd,35.000000,0
+P7_PutOffGstHse,0.000000,1
+Points_Max,2550.000000,0
+R1_AvgTimeToEatChrry,14.000000,1
+R2_AvgChrryPerLvl,1.000000,1
+S1b_AvgStates,358.000000,0
+S1c_AvgCycles,3685.000000,2
+S2a_LivesGained,1.000000,4
+S2b_LivesLost,0.000000,1
+S4_TeleportUse,1.000000,0
+S5_GhostHunts,4.000000,0

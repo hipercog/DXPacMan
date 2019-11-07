@@ -1,0 +1,62 @@
+if( A4_HuntAfterPill > 2 )then Conqr
+
+if( A4_HuntAfterPill > 2  and  C4_CaughtAfterHunt <= 2 )then Conqr
+
+if( C5_MvsWoutGain <= 106  and  S2a_LivesGained == 1 )then Conqr
+
+if( A4_HuntAfterPill > 2  and  S1c_AvgCycles <= 5650 )then Conqr
+
+if( S2a_LivesGained == 1  and  S1c_AvgCycles <= 5650  and  Lives_SDev <= 1.654 )then Conqr
+
+if( S2a_LivesGained == 1  and  C4_CaughtAfterHunt <= 2  and  S1c_AvgCycles <= 6530 )then Conqr
+
+if( S1c_AvgCycles <= 4410  and  A4_HuntAfterPill > 1  and  S2a_LivesGained == 1 )then Conqr
+
+if( ChryBool_Sum > 23  and  S2a_LivesGained == 1  and  Lives_SDev <= 1.54 )then Conqr
+
+if( ChryBool_Sum > 23  and  C3_CloseCalls > 0  and  A4_HuntAfterPill > 2 )then Conqr
+
+if( Lives_SDev <= 1.54  and  A4_HuntAfterPill > 1  and  CycleCountPerState_SDev <= 15.77  and  C4_CaughtAfterHunt <= 1 )then Conqr
+
+if( R2_AvgChrryPerLvl == 1  and  P7_PutOffGstHse == 0  and  C1b_ThreatPerception_NumKilled <= 1  and  S2b_LivesLost <= 14 )then NotCq
+
+if( C5_MvsWoutGain <= 150  and  A4_HuntAfterPill > 0  and  C2b_AvgDstPacAtkCntrd <= 13.26  and  C4_CaughtAfterHunt <= 2  and  ChryBool_Sum > 23 )then Conqr
+
+
+2.603241,Score,Usage
+Conqueror,,11
+Not_Conqueror,,1
+
+A1_AtkGstHse,1.000000,0
+A3_GhostKills,2.000000,0
+A4_HuntAfterPill,3.000000,7
+A6_Chase¬Dots,2.000000,0
+C1b_ThreatPerception_NumKilled,0.000000,1
+C2.b_AvgDstPacAtkCntrd,8.756522,1
+C3_CloseCalls,7.000000,1
+C4_CaughtAfterHunt,1.000000,4
+C5_MvsWoutGain,93.000000,2
+C6_PntsOvrLives,7450.000000,0
+C7_KilledAtHouse,1.000000,0
+ChryBool_Sum,42.000000,3
+CycleCountPerState_SDev,11.526502,1
+D1_CyclesPerMove,11.000000,0
+D2_Osclltng,102.000000,0
+Lives_SDev,0.500485,3
+P1_LureToPill,0.000000,0
+P1b_2GstsLrd2Pll,0.000000,0
+P1c_GstsEtnOnPll,1.000000,0
+P1d_PacEtnB4GetPll,0.000000,0
+P3_CntDtsB4Pll1,16.000000,0
+P4a_HuntGst1_AvgSpd,360.000000,0
+P4b_HuntGst2_AvgSpd,0.000000,0
+P7_PutOffGstHse,0.000000,1
+Points_Max,2250.000000,0
+R1_AvgTimeToEatChrry,42.000000,0
+R2_AvgChrryPerLvl,1.000000,1
+S1b_AvgStates,322.000000,0
+S1c_AvgCycles,3824.000000,4
+S2a_LivesGained,1.000000,5
+S2b_LivesLost,2.000000,1
+S4_TeleportUse,1.000000,0
+S5_GhostHunts,4.000000,0

@@ -1,0 +1,47 @@
+	long lastSec = time(0);
+	int frameTimer = 0, lastSecFrames = 60;
+	int pacTik = 5, gstTik = 8;
+	int pacloop = 0, gstloop = 0;
+//	gstTik = pacTik*1.5;
+	// Start the message processing loop
+	while( TRUE )
+	{
+		if(frameTimer > 30)
+		if(lastSec != time(0))
+		{
+			cout << "Frames last second: " << frameTimer << ", " << pacloop << ", " << gstloop << endl;
+			lastSec = time(0);
+			lastSecFrames = frameTimer;
+			pacTik = int(lastSecFrames/12);
+			gstTik = int(pacTik*1.5);
+			frameTimer = 0;
+			pacloop = gstloop = 0;
+		}
+		// Check if a message is waiting for processing
+		if( PeekMessage( &msg, NULL, 0, 0, PM_REMOVE ) )
+		{
+			// Check if the message is to quit the application
+			if( msg.message == WM_QUIT )
+				break;	// Exit the message loop
+			
+			// Change the format of certain messages
+			TranslateMessage( &msg );
+
+			// Pass the message to WndProc() for processing
+			DispatchMessage( &msg );
+		}
+		else
+		{
+			GameLoop(); //Perform another iteration of the GameLoop()
+			/**/
+			if(frameTimer%pacTik == 0)
+			{
+				//PacLoop();
+				pacloop++;
+			}
+			//Different loop speed makes Ghosts slower
+			if(frameTimer%gstTik == 0)
+			{
+				//GhostLoop();
+				gstloop++;
+			}

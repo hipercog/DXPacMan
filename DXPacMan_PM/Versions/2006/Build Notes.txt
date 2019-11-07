@@ -1,0 +1,99 @@
+16-12
+Completed Preorder based recursion code, tested. Crashes. No indication as to why yet.
+
+15-12
+Using Preorder function to build tree - not tested yet.
+
+14-12
+Added Tree.h and DLinkedList.h to enable recursive data structures so I can do deep searches of the game possibility space. Half way through coding the recursion function.
+
+06-12
+Refactored code files to make it well-formed: paired source and headers, put all globals in their own .cpp/.h
+Created structs for fProbs and GhostMove...
+
+05-12
+Split up probabilityOfGhosts function. Can't use the recurse function yet (ie can only calculate one step) since the fProbs and GhostMove arrays are global now and are overwritten everytime probabilityOfGhosts is called.
+
+29-11
+Started specifying the DT formula - properly!
+action(), probability() and utility() functions define our formula.
+
+28-11
+GetTickCount() based timer. Using multiples of 16 for the Pacman and Ghosts tick count to make it regular - works quite well.
+
+08-11
+Stable code. Timer which uses the number of frames rendered last second to predict the next frame. Divide this by, for instance, 12 for Pacman and 8 for Ghosts to get granularity to use. Not very accurate - fps is too variable.
+
+06-11
+Added a generic Windows console for I/O during play. Can name ID output files now, and use console to test the value of states by requesting the user specify the state to do prediction in.
+Adding a timer on the execution of GameLoop, so that instead of slowing Pacman and Ghosts to one render every 8 and 12 frames respectively, we can have them render at some absolute number of frames per second.
+
+03-08
+Went back and added some features from the real game. Ghosts flicker blue to normal before the ghost flee timer runs out. They don't return to the ghost house until just before this happens. The cherry only appears after a random period, and can't be eaten by ghosts (except shadow)...
+
+18-05
+Finished! Well, A* works, and we have sensible output values. I can personally get a 50%+ score for accurate predictions, but thats me...tried to get individual output file names working, first with user prompting (does it work with DX9?), and then with random numbers (put the seed call BEFORE the file name init call!)
+
+17-05
+Reimplemented bactracking in A*. With a bit more work, it should work...See notes in function.
+
+16-05
+Caught some more logic bombs in myHeuristicDist, a_Star and dtpm.cpp. Altered a_Star to allow use of the teleporters. Seems to work ok. Need to look hard at backtracking. Without, gives bad paths, but with it seems extra buggy and still sometimes gives bad paths. F score history array should be searched for lowest first, then jump back - not iterative search and jump back.
+
+15-05
+Put in deInit, to clear globals from dtpm.h at every call to mainDTPM(). Took out ShadowMap, not needed. Looked for calls to g_CherrySprite since its released in main.cpp after being eaten.
+
+14-05
+Continued improving list of heuristics, tightening up support functions. Still running into stalling bug, no idea where IT comes from. Looks like infinite loop or memory leak, throws no errors.
+Had the idea I could refactor a_Star to use variable cost for distance covered, i.e. G variable. Add the PacMap value of the square covered - dot == 4, empty == 6. No work done yet.
+
+13-05
+Built up a list of heuristics to test, but ran into unfathomable bug. Seems to be in the RUNNING AWAY section, but commented out almost all code therein and it persisted. Not throwing any errors, looks like infinite loop. Try eating cherry from other direction?
+
+12-05
+More fiddling with utilities. Replaced manhattanDist with myHeuristicDist. Getting reasonable results, need to insert a range of heuristics and see how a whole game plays.
+
+11-05
+Implementing a measurement of utility along an A* path from Pacman to an objective. Will extend this with heuristics - initial specs for these in comments ( @utilityOfObjective() and notebook). Also designed new possible heuristic to replace manhattan distance - see notebook. lowest() and highest() funcs might be useful.
+
+10-05
+Believe a_Star to be reasonably reliable now...returns good paths and correct numbers. Probably not correct implementation, but good enough. Added global vectors to hold the path after a call. Tried to convert local paths to vectors but turned buggy - relevant code at Versions/dtpm.h.
+Wrote utilityOfObjective function - this takes an source and target X,Y and looks for best utility on all open X,Y's around the source. Can consider square by square and also entire path utilities in single function.
+
+09-05
+Nearly fixed a_star : have to add testing on equal manhattan distance junctions. Testing will need to be a_Star too, so how can
+we take the result of the winning a_Star and give it to the parent a_Star, instead of just telling the parent which square to 
+choose and letting it figure out the path again.
+
+
+08-05
+Added a_Star to !CherryEaten utility. Considering using availableActions in recursive manner.
+
+27-04
+Updated a_Star, got it working to some degree. Bactracking not really working, and without it the path goes all over the place.
+
+26-04
+Added more evaluation of state in the utility function, also added the following funcs:
+	localDots - returns how many dots within a given rad of a point
+	localGhosts - returns how many Ghosts within a given rad of a point
+	utilityOfState - gets relative distances of Ghosts & Pacman, decides how good this state is
+	a_Star - untested, maybe not complete.
+
+25-04
+Refactored the code to allow recursive evaluations of Ghost states - this is just one part of the puzzle in evaluating 
+multiple Pacman moves at a time. Next: heuristics and pathfinding.
+
+24-04
+Tonights build saw very basic predictions of one-step utility, which worked in that the predictions corresponded to actual
+movement. This is a trivial result, since the prediction is based on one future movement only, and the utility of this
+move is where the next pill is. Since Pacman leaves no pills behind, and most of his environment is bi-directional, the only
+utility is forward, the way I moved in (limited) code tests.
+
+23-04
+Have finalised code to determine probabilities of states, array of positions of ghosts in each state, and output them to file.
+
+
+21-04
+Am fairly certain that probabilities of states is working.
+Have determined probabilities by discounting all states where a ghost moves into a wall, and then counting the remainder.
+The integral is the probability for each state - i.e. the distrbution is random and thus all states are equally likely.
