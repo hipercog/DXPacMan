@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>International Hobo - DGD1 Questionnaire - What Play Style Do You Prefer?
+</TITLE>
+<STYLE TYPE="text/css" MEDIA="all">@import "http://survey.ihobo.com/res/survey.css";</STYLE>
+<STYLE type="text/css">
+td {
+	text-align:center;
+}
+
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript" SRC="./survey.js" TYPE="text/javascript">
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+    //Get the local IP so we can identify the player type with their Pacman results, on server end
+    var ip = '<!--#echo var="REMOTE_ADDR"-->';
+    var IP = new String(ip);
+
+    function ipval() {
+        document.dgdform.ipAddr.value=IP.split(".");
+    }
+    window.onload = ipval;
+/**/
+</SCRIPT>
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<META name="description" content="International Hobo's DGD1 Questionnaire.">
+</HEAD>
+<BODY>
+
+<!-- Content start -->
+<DIV ID="content">
+<A NAME="top"></A>
+<font size="1">To see your results after completing the survey, please disable your popup blocker now<br>(an easy way to do this - press the "See Results" button and read the information bar from your browser about popups).</font>
+<br><br>
+<H2>DGD1 Questionnaire - What Play Style Do You Prefer?</H2>
+
+This is a short survey to explore your play style. Please go through Part 1 and respond to the statements as you feel they apply to you. If you feel a statement does not apply to you, or you arent sure, just go onto the next one. Then, complete the short questions in Part 1. When youve finished, click "See Results" and after a short delay, the survey will tell you something about your play style preferences. A record of the results will be stored, but no personal details.
+
+<!-- questions section start -->
+<DIV ID="questions">
+
+<iframe name=hole width=0 height=0 style="visibility:hidden"></iframe>
+
+<FORM method="get" action="../cgi-bin/dgdsave.cgi" NAME="dgdform" enctype="multipart/form-data" target="_blank">
+
+		<INPUT TYPE="hidden" NAME="redirect" VALUE="./DGD1_thanks2.shtml">
+
+		<INPUT TYPE="hidden" NAME="Type1" ID="Type1" VALUE="">
+		<INPUT TYPE="hidden" NAME="Type2" ID="Type2" VALUE="">
+		<INPUT TYPE="hidden" NAME="Type3" ID="Type3" VALUE="">
+		<INPUT TYPE="hidden" NAME="Type4" ID="Type4" VALUE="">
+		<INPUT TYPE="hidden" NAME="ipAddr" id="ipAddr" value="">
+		<INPUT TYPE="hidden" NAME="Sex" ID="Sex" VALUE="">
+		<INPUT TYPE="hidden" NAME="GamerType" ID="gamerType" VALUE="">
+    <br>
+
+<H2>Part 1: About The Way You Play</H2>
+Indicate the degree to which you feel the statement applies to you, by clicking on the scale which from left to right goes "Really doesnt apply" to "totally applies".<br>
+(If you dont feel a statement applies, or you arent sure, move to the next statement).
+<TABLE WIDTH="99%" BORDER="2" CELLPADDING="5" ALIGN="center">
+
+    <tr>
+        <td style="text-align:left"></td>
+        <td><B>Not at all!</B></td><td><B>Not much</B></td><td><B>Neutral</B></td><td><B>A bit</B></td><td><B>A lot!</B></td>
+    </tr>
+	<TR>
+		<TD style="text-align:left">When I first start playing a game, I absolutely want and expect to beat the game.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q1"></TD><TD><INPUT TYPE="radio" NAME="Q1"></TD><TD><INPUT TYPE="radio" NAME="Q1"></TD><TD><INPUT TYPE="radio" NAME="Q1"></TD><TD><INPUT TYPE="radio" NAME="Q1"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">If I get stuck, I don't keep banging away at the puzzle. I leave that part of the game alone and come back with a fresh perspective.</TD>
+		<TD ALIGN="center"><INPUT TYPE="radio" NAME="Q2"></TD><TD><INPUT TYPE="radio" NAME="Q2"></TD><TD><INPUT TYPE="radio" NAME="Q2"></TD><TD><INPUT TYPE="radio" NAME="Q2"></TD><TD><INPUT TYPE="radio" NAME="Q2"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">I generally enjoy messing around with the game, even if I'm not progressing.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q3"></TD><TD><INPUT TYPE="radio" NAME="Q3"></TD><TD><INPUT TYPE="radio" NAME="Q3"></TD><TD><INPUT TYPE="radio" NAME="Q3"></TD><TD><INPUT TYPE="radio" NAME="Q3"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">The game I'm playing is less important than the people I'm playing with.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q4"></TD><TD><INPUT TYPE="radio" NAME="Q4"></TD><TD><INPUT TYPE="radio" NAME="Q4"></TD><TD><INPUT TYPE="radio" NAME="Q4"></TD><TD><INPUT TYPE="radio" NAME="Q4"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">When I'm working on a particular challenge, I'll try it over and over again until I beat it.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q5"></TD><TD><INPUT TYPE="radio" NAME="Q5"></TD><TD><INPUT TYPE="radio" NAME="Q5"></TD><TD><INPUT TYPE="radio" NAME="Q5"></TD><TD><INPUT TYPE="radio" NAME="Q5"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">I want to feel challenged, and I don't mind the game adjusting to my level, as long as it doesn't become too easy.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q6"></TD><TD><INPUT TYPE="radio" NAME="Q6"></TD><TD><INPUT TYPE="radio" NAME="Q6"></TD><TD><INPUT TYPE="radio" NAME="Q6"></TD><TD><INPUT TYPE="radio" NAME="Q6"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">When I face a hard challenge, and I feel like I will be stuck trying it for ages, I quickly lose interest.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q7"></TD><TD><INPUT TYPE="radio" NAME="Q7"></TD><TD><INPUT TYPE="radio" NAME="Q7"></TD><TD><INPUT TYPE="radio" NAME="Q7"></TD><TD><INPUT TYPE="radio" NAME="Q7"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">Once I start looking after a game character, I feel bad if I don't take good care of them.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q8"></TD><TD><INPUT TYPE="radio" NAME="Q8"></TD><TD><INPUT TYPE="radio" NAME="Q8"></TD><TD><INPUT TYPE="radio" NAME="Q8"></TD><TD><INPUT TYPE="radio" NAME="Q8"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">I love it when I beat a really tough challenge - that makes everything worthwhile.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q9"></TD><TD><INPUT TYPE="radio" NAME="Q9"></TD><TD><INPUT TYPE="radio" NAME="Q9"></TD><TD><INPUT TYPE="radio" NAME="Q9"></TD><TD><INPUT TYPE="radio" NAME="Q9"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">I like games where I can make diverse plans and strategies. I sometimes enjoy a game I lose if I feel I played well and interestingly.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q10"></TD><TD><INPUT TYPE="radio" NAME="Q10"></TD><TD><INPUT TYPE="radio" NAME="Q10"></TD><TD><INPUT TYPE="radio" NAME="Q10"></TD><TD><INPUT TYPE="radio" NAME="Q10"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">Sometimes I get swept up in the experience of the game and completely forget about the goals I've been given.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q11"></TD><TD><INPUT TYPE="radio" NAME="Q11"></TD><TD><INPUT TYPE="radio" NAME="Q11"></TD><TD><INPUT TYPE="radio" NAME="Q11"></TD><TD><INPUT TYPE="radio" NAME="Q11"></TD>
+	</TR>
+	<TR>
+	    <TD style="text-align:left">I'd much rather play with other people than play alone.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q12"></TD><TD><INPUT TYPE="radio" NAME="Q12"></TD><TD><INPUT TYPE="radio" NAME="Q12"></TD><TD><INPUT TYPE="radio" NAME="Q12"></TD><TD><INPUT TYPE="radio" NAME="Q12"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">Most of the time I won't stop playing until I know I've seen and beaten everything.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q13"></TD><TD><INPUT TYPE="radio" NAME="Q13"></TD><TD><INPUT TYPE="radio" NAME="Q13"></TD><TD><INPUT TYPE="radio" NAME="Q13"></TD><TD><INPUT TYPE="radio" NAME="Q13"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">The way I play is more important than winning, because I want to master the games I play.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q14"></TD><TD><INPUT TYPE="radio" NAME="Q14"></TD><TD><INPUT TYPE="radio" NAME="Q14"></TD><TD><INPUT TYPE="radio" NAME="Q14"></TD><TD><INPUT TYPE="radio" NAME="Q14"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">I usually have more than one game on the go... I don't need to finish one game to start another - a new experience is more rewarding than mastering something familiar.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q15"></TD><TD><INPUT TYPE="radio" NAME="Q15"></TD><TD><INPUT TYPE="radio" NAME="Q15"></TD><TD><INPUT TYPE="radio" NAME="Q15"></TD><TD><INPUT TYPE="radio" NAME="Q15"></TD>
+	</TR>
+	<TR>
+		<TD style="text-align:left">I'd prefer a game world with lots of characters to interact with, over a world with lots of details to explore.</TD>
+		<TD><INPUT TYPE="radio" NAME="Q16"></TD><TD><INPUT TYPE="radio" NAME="Q16"></TD><TD><INPUT TYPE="radio" NAME="Q16"></TD><TD><INPUT TYPE="radio" NAME="Q16"></TD><TD><INPUT TYPE="radio" NAME="Q16"></TD>
+	</TR>
+</TABLE>
+<br>
+<H2>Part 2: About You</H2>
+
+You are:<BR>
+<INPUT TYPE="radio" NAME="QGender" VALUE="Male"/>Male
+<INPUT TYPE="radio" NAME="QGender" VALUE="Female"/>Female<br><br>
+
+Your age:<BR>
+<INPUT TYPE="text" name="Age" SIZE="30" MAXLENGTH="50"><BR><BR>
+
+You would consider yourself a:<br>
+<INPUT TYPE="radio" NAME="Part1Q1" VALUE="Hardcore">Hardcore gamer<BR>
+<INPUT TYPE="radio" NAME="Part1Q1" VALUE="Casual">Casual gamer<BR>
+<INPUT TYPE="radio" NAME="Part1Q1" VALUE="No_Idea">I have no idea!<br><br>
+
+What are the top three types of gameplay that you enjoy - think of the games you enjoyed the best, then describe the activities that you did in those games. Examples of play types are: puzzles, shooting action, vehicle control, manager/simulation, real-time strategic control, virtual pets/toys, etc :
+<br>
+1.<INPUT TYPE="text" NAME="GpLiked1" SIZE="30" MAXLENGTH="50"><BR>
+2.<INPUT TYPE="text" NAME="GpLiked2" SIZE="30" MAXLENGTH="50"><BR>
+3.<INPUT TYPE="text" NAME="GpLiked3" SIZE="30" MAXLENGTH="50"><BR><br>
+
+And what type of gameplay do you hate (if any!):
+<INPUT TYPE="text" NAME="Part1Q3" SIZE="30" MAXLENGTH="50">
+<br><br>
+
+Enter your Student Number:
+<INPUT TYPE="text" NAME="StuNum" SIZE="30" MAXLENGTH="50">
+<br><br>
+Enter your name:
+<INPUT TYPE="text" NAME="Name" SIZE="30" MAXLENGTH="50">
+<br><br>
+
+<DIV CLASS="caption">Please note that the script running this may throw up a warning about being unresponsive (your browsers wording may vary). You will be asked if you would like to abort or stop the script. Please select No and your results screen will load on a separate window.
+</DIV>
+
+<P ALIGN="center">
+<INPUT TYPE="button" VALUE="See Results" onClick="gettype(document.dgdform);">
+<INPUT TYPE="submit" ID="submit" VALUE="Get Results" style="display:none">
+</P>
+
+</FORM>
+
+</DIV>	
+<!-- questions section end -->
+
+
+	  <HR WIDTH="75%" ALIGN="center">
+      
+	  <DIV class="footer">
+	  Last Updated: <!--#config timefmt="%d %B %Y" --> <!--#echo var="LAST_MODIFIED" --><BR>
+      </DIV>
+</DIV>
+<!-- Content end -->
+
+</BODY>
+</HTML>

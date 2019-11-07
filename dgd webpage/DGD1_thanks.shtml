@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>International Hobo - DGD1 Questionnaire - What Play Style Do You Prefer? - The Results</title>
+	<style media="all" type="text/css">@import "http://survey.ihobo.com/res/survey.css";
+	</style>
+	<link href="/favicon.ico" rel="shortcut icon" type="image/ico" />
+	<meta content="text/html; charset=iso-8859-1" http-equiv="content-type" />
+	<meta content="International Hobo's DGD1 Questionnaire." name="description" />
+</head>
+<body onload="opener.OpenResults='True'"><!-- Content start -->
+<div id="content"><a name="top"></a>
+<h2>DGD1 Questionnaire - What Play Style Do You Prefer?<br />
+The Results</h2>
+<br />
+<br />
+<!-- results section start -->
+<div id="results">
+<h2>Your Answers Show You To Be:</h2>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		<!--
+		document.write ('<B><FONT SIZE=' + opener.Type1_number/4 + '>' + opener.Type1_word);
+		//-->
+		</SCRIPT>Type 1 Conqueror <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		<!--
+		document.write ('. Score: ' + opener.Type1_number + '<\/FONT></B>');
+		//-->
+		</SCRIPT><br />
+<br />
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		<!--
+		document.write ('<B><FONT SIZE=' + opener.Type2_number/4 + '>' + opener.Type2_word);
+		//-->
+		</SCRIPT> Type 2 Manager <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		<!--
+		document.write ('. Score: ' + opener.Type2_number + '<\/FONT></B>');
+		//-->
+		</SCRIPT><br />
+<br />
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		<!--
+		document.write ('<B><FONT SIZE=' + opener.Type3_number/4 + '>' + opener.Type3_word);
+		//-->
+		</SCRIPT> Type 3 Wanderer <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		<!--
+		document.write ('. Score: ' + opener.Type3_number + '<\/FONT></B>');
+		//-->
+		</SCRIPT><br />
+<br />
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		<!--
+		document.write ('<B><FONT SIZE=' + opener.Type4_number/4 + '>' + opener.Type4_word);
+		//-->
+		</SCRIPT> Type 4 Participant <SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+		<!--
+		document.write ('. Score: ' + opener.Type4_number + '<\/FONT></B>');
+		//-->
+		</SCRIPT><br />
+&nbsp;
+<h2>The Play Styles</h2>
+&nbsp;
+
+<dl>
+	<dt><b>Type 1: Conqueror</b></dt>
+	<dd><br />
+	<br />
+	This play style is associated with challenge and the emotional payoff of Fiero - triumph over adversity (the feeling that makes you put both arms in the air, like when your sports team scores).<br />
+	<br />
+	This play style is highly patient with frustration, because they know if they stick with it, they can win. Players who prefer this play style often aim to utterly defeat games they play - and they tend to finish games they start.<br />
+	<br />
+	Proficiency with logistical optimisation (improving through playing the same challenge again and again) and strategic thinking are the main skills of many players preferring this play style.</dd>
+	<br />
+	<br />
+	<br />
+	&nbsp;
+	<dt><b>Type 2: Manager</b></dt>
+	<dd><br />
+	<br />
+	This play style is associated with mastery and systems. Victory for people preferring this play style seems to be the sign that they have acquired the necessary skills, not a goal in and of itself. They may not finish many games that they start playing.<br />
+	<br />
+	This play style is good at dealing with multiple factors in parallel - whether it is building an army out of diverse unit types, or tuning a car engine by making adjustments to minor settings.<br />
+	<br />
+	Tactical competence (the ability to think on their feet) backed with strategic thinking characterises this play style.</dd>
+	<br />
+	<br />
+	<br />
+	&nbsp;
+	<dt><b>Type 3: Wanderer</b></dt>
+	<dd><br />
+	<br />
+	This play style is associated with experience and identity. Challenge is not especially desired, but may be tolerated - what players preferring this play style enjoy is unique and interesting experiences.<br />
+	<br />
+	The feeling that something new is just around the corner, an involving story, or a beautiful world which is a pleasure just to look at are all draws for players preferring this play style.<br />
+	<br />
+	Tactical competence (the ability to decide what to do without planning) and abstract thinking are the main strengths of players preferring this play style.</dd>
+	<br />
+	<br />
+	<br />
+	&nbsp;
+	<dt><b>Type 4: Participant</b></dt>
+	<dd><br />
+	<br />
+	This play style is associated with emotions and involvement. Participants seem happiest when they are playing with people, but they also enjoy play which is rooted in emotion - such as a game with involving characters. Any game which allows the player an emotional stake is a potential Type 4 game.<br />
+	<br />
+	Having an emotional effect (good or bad!) seems to be a key draw, so games that allow the player to affect people (such as The Sims) appeal, as do multiplayer games - although direct competition is not liked by all players preferring this play style.<br />
+	<br />
+	Players preferring this play style tend to have the skills for logistical optimisation - that is, they can work out how to do something efficiently when given sufficient motivation.</dd>
+</dl>
+</div>
+<!-- results section end -->
+
+<hr align="center" width="75%" />
+<div class="footer">Last Updated: <!--#config timefmt="%d %B %Y" --> <!--#echo var="LAST_MODIFIED" --><br />
+<!--#include virtual="/res/footer.shtml"--></div>
+</div>
+<!-- Content end --></body>
+</html>

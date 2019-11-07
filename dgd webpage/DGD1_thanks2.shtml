@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>International Hobo - DGD1 Questionnaire - What Play Style Do You Prefer? - The Results
+</TITLE>
+<STYLE TYPE="text/css" MEDIA="all">@import "http://survey.ihobo.com/res/survey.css";</STYLE>
+<SCRIPT LANGUAGE="JavaScript" SRC="/res/survey.js" TYPE="text/javascript"></SCRIPT>
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<META http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<META name="description" content="International Hobo's DGD1 Questionnaire.">
+</HEAD>
+<BODY>
+
+<!-- Menu start -->
+<DIV ID="navigation">
+
+    <a href="http://zenben.net/dgd/"><IMG SRC="../f_images/twistedZenben.png" ALT="zenBen - Logo" BORDER="0" ALIGN="middle"></a>
+	<BR><BR><BR>
+
+</DIV>
+<!-- Menu end -->
+
+<!-- Content start -->
+<DIV ID="content">
+	<A NAME="top"></A>
+
+<H1>Thank you!</H1>
+	
+Thank you for taking part.
+<br><br>
+If you saw the results page, but in the "Your Answers Show You To Be:" section the word "undefined" or similar appears, press the back button on your browser and press the "See Results" button again (your answers should all still be there).
+<br><br>
+If you did not see a separate window with your results, please try again and if the problem continues email webmaster(at)ihobo.com detailing your browser type and system or OS.
+
+	  <HR WIDTH="75%" ALIGN="center"><br><br> 
+      
+	  <DIV class="footer">
+	  Last Updated: <!--#config timefmt="%d %B %Y" --> <!--#echo var="LAST_MODIFIED" --><BR>
+      <!--#include virtual="/res/footer.shtml"-->
+      </DIV>
+</DIV>
+<!-- Content end -->
+
+</BODY>
+</HTML>
